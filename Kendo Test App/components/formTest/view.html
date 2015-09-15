@@ -1,0 +1,22 @@
+<div data-role="view" data-title="Form" data-layout="main" data-model="app.formTest" data-show="app.formTest.onShow" data-after-show="app.formTest.afterShow">
+    <div id="formTestModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Username
+                        <input data-bind="value: formTestModel.fields.username" placeholder="johndoe" type="text">
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: formTestModel.cancel }">Cancel</a>
+                <a class="primary" data-role="button" data-bind="events: { click: formTestModel.submit }">Confirm</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_formTestModel -->
+        <!-- END_CUSTOM_CODE_formTestModel -->
+    </div>
+    <!-- START_CUSTOM_CODE_formTest -->
+    <!-- END_CUSTOM_CODE_formTest -->
+</div>
