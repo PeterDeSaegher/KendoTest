@@ -5,6 +5,12 @@
         data: {}
     };
 
+    var context = {
+    	user: undefined,
+    	session: undefined,
+    	name: undefined    		
+    };
+    
     var bootstrap = function() {
         $(function() {
             app.mobileApp = new kendo.mobile.Application(document.body, {
@@ -55,6 +61,8 @@
         currentItem.addClass('active');
     };
 
+    app.context = context;
+    
     window.app = app;
 
     app.isOnline = function() {
