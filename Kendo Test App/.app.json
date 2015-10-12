@@ -2,25 +2,25 @@
   "type": "kendo-ui-mobile",
   "views": [
     {
-      "type": "view",
-      "components": [],
+      "type": "kendo-ui-mobile:view",
       "name": "home",
-      "title": "Home",
+      "components": [],
+      "title": "Home View",
       "addToNavigation": true,
       "icon": "home"
     },
     {
-      "type": "view",
+      "type": "kendo-ui-mobile:view",
+      "name": "formTest",
       "components": [
         {
-          "type": "form",
+          "type": "kendo-ui-mobile:form",
           "components": [
             {
-              "type": "field",
+              "type": "kendo-ui-mobile:field",
               "name": "username",
               "title": "Username",
-              "inputType": "text",
-              "placeholder": "johndoe"
+              "inputType": "text"
             }
           ],
           "name": "formTestModel",
@@ -28,7 +28,6 @@
           "cancelButton": "Cancel"
         }
       ],
-      "name": "formTest",
       "title": "Form",
       "addToNavigation": true,
       "icon": "bookmarks"
