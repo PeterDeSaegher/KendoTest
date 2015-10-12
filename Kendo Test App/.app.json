@@ -39,6 +39,14 @@
       "title": "Customer",
       "addToNavigation": true,
       "icon": "contacts"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "activView",
+      "components": [],
+      "title": "Activiteiten",
+      "addToNavigation": true,
+      "icon": "search"
     }
   ],
   "dataProviders": [],
