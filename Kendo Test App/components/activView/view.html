@@ -1,7 +1,11 @@
 <div id="viewActivs" data-role="view" data-title="Activiteiten" data-layout="main" data-model="app.activView" data-show="app.activView.onShow" data-after-show="app.activView.afterShow">
     <!-- START_CUSTOM_CODE_activView -->
-    <DIV data-role="grid" 
-         data-bind="source: ActivLocal"              
-         data-columns="[{'field': 'firmanr'},{'field': 'activnr'},{'field': 'sessienr'},{'field': 'datumact'}]" data-width="600px" data-height="500px"></DIV>
+         <DIV 
+         data-role="grid"                
+         data-columns="['firmanr','activnr','sessienr','datumact','cRowId','naamact']"
+         data-bind="source: Activiteiten"        
+         
+         ></DIV>
     <!-- END_CUSTOM_CODE_activView -->
+
 </div>
