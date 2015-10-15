@@ -4,7 +4,13 @@
     var app = {
         data: {}
     };
-
+    
+    var orSession = new OrSession();
+    
+    orSession.serviceUrl = "http://91.183.131.163:8980/pug/rest/pugService/";
+    
+    app.orSession = orSession;
+    
     var bootstrap = function() {
         $(function() {
             app.mobileApp = new kendo.mobile.Application(document.body, {
@@ -55,6 +61,7 @@
         currentItem.addClass('active');
     };
 
+        
     window.app = app;
 
     app.isOnline = function() {

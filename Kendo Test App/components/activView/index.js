@@ -22,7 +22,10 @@ dataLocal.push({cRowId: "4", firmanr: 1, activnr: 4, sessienr: 1, datumact: "09/
 console.log("array init finished");
 
 app.activView = kendo.observable({
-    onShow: function() {},
+    onShow: function() {
+    	console.log(app.orSession.serviceUrl);
+    	
+    },
     afterShow: function() {},
     
     Activiteiten: new kendo.data.DataSource({
